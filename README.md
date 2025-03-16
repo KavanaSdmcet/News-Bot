@@ -52,17 +52,6 @@ A Telegram bot that fetches and displays the latest news articles based on user-
   Read more: https://example.com/news
   
 
-## Project Structure
-
-telegram-news-bot/
-├── src/
-│   └── index.js      # Main bot logic
-├── .env             # Environment variables (not committed)
-├── package.json     # Dependencies
-├── README.md        # This file
-└── screencast.mp4   # Demo video
-
-
 ## Dependencies
 - `telegraf`: Telegram bot framework.
 - `axios`: HTTP client for API requests.
