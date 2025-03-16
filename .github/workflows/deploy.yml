@@ -19,7 +19,7 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.OPEN_SERV_API_KEY }}" \
             -H "Content-Type: application/json" \
             -d '{
-              "repository": "https://github.com/yourusername/your-repo", 
+              "repository": "https://github.com/KavanaSdmcet/News-Bot", 
               "branch": "main",
               "deployment_key": "your-deployment-key"
             }'
