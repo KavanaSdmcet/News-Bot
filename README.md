@@ -57,12 +57,8 @@ A Telegram bot that fetches and displays the latest news articles based on user-
 - `axios`: HTTP client for API requests.
 - `dotenv`: Environment variable management.
 
-## Hackathon Context
-This bot was developed for a hackathon requiring OpenServ SDK integration. Due to the following constraints:
-- No access to `OPENSERV_API_KEY` within the 10-hour submission window.
-- No provided GOAT framework credentials for on-chain capabilities.
-
-The project uses a standalone approach with plans to integrate OpenServ SDK post-hackathon once credentials are obtained. The code structure reflects readiness for such integration (e.g., modular news fetching).
+## Live link
+- https://t.me/PersonalizedNewsAggregatorBot.
 
 ## Future Improvements
 - Integrate OpenServ SDK for advanced agent capabilities and file storage.
