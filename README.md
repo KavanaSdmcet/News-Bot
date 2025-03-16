@@ -75,17 +75,6 @@ This bot was developed for a hackathon requiring OpenServ SDK integration. Due t
 
 The project uses a standalone approach with plans to integrate OpenServ SDK post-hackathon once credentials are obtained. The code structure reflects readiness for such integration (e.g., modular news fetching).
 
-## Demo
-Watch `screencast.mp4` for a demonstration of:
-- Starting the bot with `/start`.
-- Selecting a category (e.g., Crypto).
-- Fetching news with `/news`.
-
-## Limitations
-- **No OpenServ Integration**: Mocking was considered but omitted to focus on a working demo.
-- **API Dependency**: Requires at least one news API key to function; falls back gracefully if none are available.
-- **No Chat Summarization**: Limited scope to news fetching due to time constraints.
-
 ## Future Improvements
 - Integrate OpenServ SDK for advanced agent capabilities and file storage.
 - Add group chat summarization using Telegram API.
