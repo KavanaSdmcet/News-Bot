@@ -14,7 +14,7 @@ const categories = {
 
 // Function to escape MarkdownV2 special characters
 const escapeMarkdown = (text) => {
-  return text.replace(/([_*\\[\]()~`>#+\-=|{}.!])/g, "\\$1");
+  return text.replace(/([_*\[\]()~`>#+\-=|{}.!])/g, "\\$1");
 };
 
 // Fetch news from APIs based on category
@@ -59,9 +59,6 @@ async function sendNews(ctx, messages) {
     }
   }
 }
-
-// Send initial greeting
-bot.telegram.sendMessage(process.env.TELEGRAM_CHAT_ID, "👋 Hello! Welcome to NewsBot.\n\nType /start to choose a news category and get the latest updates!");
 
 // /start command
 bot.start((ctx) => {
