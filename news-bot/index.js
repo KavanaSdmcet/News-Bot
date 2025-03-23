@@ -60,13 +60,11 @@ async function sendNews(ctx, messages) {
   }
 }
 
-// Initial greeting message
-bot.start(async (ctx) => {
-  await ctx.reply("👋 Hello! Welcome to NewsBot.\n\nType /start to choose a news category and get the latest updates!");
-});
+// Send initial greeting
+bot.telegram.sendMessage(process.env.TELEGRAM_CHAT_ID, "👋 Hello! Welcome to NewsBot.\n\nType /start to choose a news category and get the latest updates!");
 
 // /start command
-bot.command("start", (ctx) => {
+bot.start((ctx) => {
   ctx.reply("Hello! Choose a news category:", {
     reply_markup: {
       inline_keyboard: [
