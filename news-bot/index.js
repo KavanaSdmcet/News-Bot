@@ -14,7 +14,7 @@ const categories = {
 
 // Function to escape MarkdownV2 special characters
 const escapeMarkdown = (text) => {
-  return text.replace(/([_*\[\]()~`>#+\-=|{}.!])/g, "\\$1");
+  return text.replace(/([_*\\[\]()~`>#+\-=|{}.!])/g, "\\$1");
 };
 
 // Fetch news from APIs based on category
@@ -60,8 +60,13 @@ async function sendNews(ctx, messages) {
   }
 }
 
+// Initial greeting message
+bot.start(async (ctx) => {
+  await ctx.reply("👋 Hello! Welcome to NewsBot.\n\nType /start to choose a news category and get the latest updates!");
+});
+
 // /start command
-bot.start((ctx) => {
+bot.command("start", (ctx) => {
   ctx.reply("Hello! Choose a news category:", {
     reply_markup: {
       inline_keyboard: [
